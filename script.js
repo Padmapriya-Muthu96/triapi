@@ -27,14 +27,21 @@ function foo(data1){
         <div class="col-md-4">
         <div class="card border-primary mb-3 " style="width: 18rem;">
         <h5 class="card-title">${data1[i].name.common}</h5>
+        
         <img src="${data1[i].flags.svg}" class="card-img-top" alt="country flags">
+       
           <div class="card-body">
-        <p class="con-cap">Capital:${data1[i].capital}</p>
-        <p class="con-reg">Region:${data1[i].region}</p>
+        <p class="con-cap">Capital: ${data1[i].capital}</p>
+        <p class="con-reg">Region: ${data1[i].region}</p>
+        <p class="con-code">Country Code: ${data1[i].cca3}</p>
+        <button onclick="clickfun">Click for Weather</button>
+        
         </div>
       </div>
       </div>
         `;
         document.body.append(container);
+       
     }
+
 }
